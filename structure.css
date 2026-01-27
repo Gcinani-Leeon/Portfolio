@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-size: 1rem;
+    font-family: sans-serif, Courier, monospace;
+    text-decoration: none;
+    list-style: none;
+    /*outline: 1px solid black;*/
+}
+
+header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: tomato;
+}
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8vh;
+        width: 650px;
+        padding: 1rem;
+        outline: 2px solid blue;
+    }
+
+    #check{
+        display: none;
+    }
+    #menu-btn-open{
+        display: none;
+    }
+    #menu-btn-close{
+        display: none;
+    }
+
+    #check:checked ~ .nav{
+        right: 0;
+    }
+
+    .logo{
+        font-weight: bolder;
+    }
+    .nav{
+        display: flex;
+        gap: 0.5rem;
+    }
+
+
+section{
+    margin-top: 8vh;
+}
+
+.section{    
+    display: flex;
+    justify-content: center;
+    /*width: 100vw;*/
+    background-color: seagreen;
+}.home{
+    min-height: 92vh;
+}.about{
+    min-height: 92vh;
+    background-color: white;
+}
+
+    .container{    
+        display: flex;
+        justify-content: space-around;
+        width: 650px;
+    }.home-container{
+        align-items: center;
+    }.about-container{
+        /*align-items: center;*/
+    }
+    
+    .my-details{
+        width: 50%;
+    }.my-details h2{
+        font-size: 3rem;
+        text-align: center;
+        padding: 1rem;
+    }
+    .my-details .paragraph{
+
+    }
+    .my-details p{
+        padding: 0.5rem 1rem;
+        text-align: center;
+    }
+    .more-info{
+
+    }
+    .more-info{
+        /*width: 100%;*/
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    .more-info a{
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        margin: 0 0.5rem;
+        border-radius: 20px;
+        font-weight: bolder;
+    }
+    .more-info .contacts{
+        background-color: black;
+        color: white;
+    }
+    .more-info .projects{
+        outline: 0.01rem solid white;
+    }
+
+
+
+    #my-picture{
+        width: 50%;
+        text-align: center;
+    }#my-picture img{
+        width: 80%;
+        aspect-ratio: 1;
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+
+
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 4rem 0.2rem 3rem;
+}.about-details div .paragraph{
+    font-size: ;
+}.about-details div .paragraph p{
+    font-size: ;
+    padding: 0.5rem 0;
+
+}
+h4{text-align: center;}
+.skill-details{
+    background-color: ;
+    width: 100%;
+}.skill-details div .paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-collection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}.skill-collection div{
+    border: 1px solid black;
+    border-radius: 9px;
+    padding: 0.2rem;
+    max-width: 350px;
+}progress{
+width: 100%;}
+.skill-collection div p{
+    font-size: 0.7rem;
+}
+
+
+
+@media (max-width: 650px) {
+    *{
+        font-size: 1.125rem;
+    }
+.header-container{
+    /*padding: 1rem;*/
+}
+    .home-container{
+        /*padding: 1rem;*/
+    }
+    .nav{
+        position: absolute;
+        top: 8vh;
+        right: -500px;
+        display: flex;
+        flex-direction: column;
+        background-color: floralwhite;
+    }
+
+    #menu-btn-open{
+        display: block;
+    }
+    #menu-btn-close{
+        display: none;
+    }
+
+
+.home-container{
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+    .my-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: ;
+        width: 100%;
+        height: 50%;
+    /*background-color: yellowgreen;*/
+    }
+    .my-details h1{
+        font-size: 2.2rem;
+    }
+
+    #my-picture {
+        display: flex;
+        /*flex-direction: column;*/
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        min-height: 50%;
+        /*background-color: yellow;*/
+    }
+
+    #my-picture img{
+        max-width: 320px;
+    }
+
+    .about-details div h2{
+        font-size: 2rem;
+        padding: 2.5rem 0.2rem 1.5rem;
+    }.about-details div .paragraph{
+        font-size: ;
+        padding: 0 1rem;
+    }.about-details div .paragraph p{
+        font-size: ;
+        padding: 0.5rem 1rem;
+
+    }
+
+}
